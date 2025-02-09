@@ -1,10 +1,18 @@
 #pragma once
+
 #include "Framework/GameObject.h"
+#include "Player.h"
+
 class Enemy :
     public GameObject
 {
 public:
     Enemy();
-    void enemyMove(sf::Vector2f, sf::Vector2f);
-};
+    ~Enemy();
+    void update(float dt);
+    void setWindow(sf::RenderWindow* wnd);  // set window why? must be for collision
 
+    sf::Texture goomba;
+    sf::RenderWindow* window;
+
+};

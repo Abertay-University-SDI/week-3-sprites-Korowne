@@ -39,7 +39,7 @@ public:
 	void setInput(Input* in) { input = in; };
 	void setWindow(sf::RenderWindow* win) { window = win; };
 
-protected:
+protected:	// this does allow for game characters to still access these, only through a child class
 	// Sprite properties
 	sf::Vector2f velocity;
 	bool alive;
