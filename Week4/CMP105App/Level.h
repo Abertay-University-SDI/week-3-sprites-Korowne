@@ -7,6 +7,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Background.h"
+#include "Cursor.h"
 #include <string.h>
 #include <iostream>
 
@@ -27,4 +28,5 @@ private:
 	Background bg;
 	Player p1;	// remember to initialize.
 	Enemy e1;
+	Cursor c;
 };
